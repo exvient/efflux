@@ -17,7 +17,7 @@ module.exports.run = async (bot, message, args) => {
                 // "",
                 // "",
                  //""]
-  var randomAnswer = answers[Math.floor(Math.random() * answers.length)];
+  randomAnswer = answers[Math.floor(Math.random() * answers.length)];
   let slerror = new Discord.RichEmbed()
   .setAuthor("Efflux")
   .setDescription("I couldn't find that user...")
