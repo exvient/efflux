@@ -18,20 +18,21 @@ module.exports.run = async (bot, message, args) => {
                 // "",
                  //""]
   randomAnswer = answers[Math.floor(Math.random() * answers.length)]
-  let slerror = new Discord.RichEmbed()
-  .setAuthor("Efflux")
-  .setDescription("I couldn't find that user...")
-  .setColor(embederrorcolor)
+  slerror = new Discord.RichEmbed()
+  slerror.setAuthor("Efflux")
+  slerror.setDescription("I couldn't find that user...")
+  slerror.setColor(embederrorcolor)
 
-  let slUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]))
+  slUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]))
   if(!slUser) return message.channel.send(slerror)
-  if(slUser.id === bot.user.id) return
-  let slembed = new Discord.RichEmbed()
-  .setAuthor("Efflux")
-  .setImage(randomAnswer)
-  .setDescription(`Ouch, ${slUser}, that's going to hurt.`)
-  .setColor(embedcolor)
+  if(slUser.id === bot.user.id) return;
+  slembed = new Discord.RichEmbed()
+  slembed.setAuthor("Efflux")
+  slembed.setImage(randomAnswer)
+  slembed.setDescription(`Ouch, ${slUser}, that's going to hurt.`)
+  slembed.setColor(embedcolor)
   message.channel.send(slembed)}
+
 module.exports.help = {
   name: "slap"
 }
