@@ -4,7 +4,7 @@ const embederrorcolor = "#e74c3c";
 
 module.exports.run = async (bot, message, args) => {
 
-  var answers = ["https://media.giphy.com/media/pfGBhQSaYAO5y/giphy.gif",
+  answers = ["https://media.giphy.com/media/pfGBhQSaYAO5y/giphy.gif",
                  "https://media.giphy.com/media/8TpEwyNgVypZm/giphy.gif",
                  "https://media.giphy.com/media/VEmm8ngZxwJ9K/giphy.gif",
                  "https://media.giphy.com/media/Gf3AUz3eBNbTW/giphy.gif",
